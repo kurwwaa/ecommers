@@ -31,7 +31,9 @@ header{
 } */
 
 
-
+* {            /*           Использует все елементы  тут я просто поменя шрифт у сайта*/
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 :root {
    --color: #eeeeee;
