@@ -101,11 +101,11 @@ body{
 .containerUp {
     background-color: white;
     width:  100%;
-    height: 150px;
-    flex-direction: column;      /* Ставит элементы вертикально */
-  justify-content: center;     /* Центрирует по вертикали */
-  align-items: center;   
-
+    height: 80px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+   
 
 
 }
