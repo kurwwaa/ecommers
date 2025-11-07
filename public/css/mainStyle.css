@@ -39,6 +39,8 @@ header{
    --color: #eeeeee;
    --colorwhite: white;
     --gray: #565656;
+    --btn: #976700;
+    --textBtn: #e8e8e8;
 }
 
 body{
@@ -177,15 +179,53 @@ font-size: 10px;
 
 
 
-.kataLogImg {
-    display: flex;
-    flex-wrap: wrap;
-    /* position: relative; */
-    width: 260px;
-    height: 140px;
-    display: flex;   
-    flex-direction: column;      /* Ставит элементы вертикально */
-    justify-content: center;     /* Центрирует по вертикали */
-    padding: 300px;
 
+
+
+
+
+
+
+.containerCatalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 12px;
+}
+
+.catalogCard {
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+    backdrop-filter: blur(6px);
+}
+
+.catalogCard:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(10,10,10,0.09);
+    border-color: rgba(0,0,0,0.12);
+}
+
+.buyBtn{
+    background-color: var(--btn);
+    color: var(--textBtn);
+    border-radius: 6px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(151,103,0,0.18);
+    transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+
+.buyBtn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(151,103,0,0.22);
+    opacity: 0.98;
+}
+
+.buyBtn:active{
+    transform: translateY(0);
 }
