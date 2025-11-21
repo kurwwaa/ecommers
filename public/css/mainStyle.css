@@ -64,6 +64,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 200px;
 }
 
 
@@ -71,7 +72,6 @@ a {
    font-size: 7px;
    background-color: rgb(255, 255, 255);
    height: 140px;
-   margin: 20px;
    width:   130px;
    border-radius: 12px;
    display: flex;   
@@ -183,21 +183,93 @@ font-size: 10px;
 
 
 
-
-
-
-.containerCatalog{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 12px;
+.containerCatalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 12px;
+  height: 750px;
+  margin: 20px;
+  width: 400px;
 }
 
 .catalogCard {
-    background-color: transparent;
-    border: 1px solid rgba(0,0,0,0.06);
-    box-shadow: 0 6px 18px rgba(10,10,10,0.06);
-    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
-    backdrop-filter: blur(6px);
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(10, 10, 10, 0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  backdrop-filter: blur(6px);
+  height: 400px;
+  width: 320px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* Важно: вертикальное расположение */
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
 }
+
+.catalogContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.CatalogImg {
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.catalogTextBox {
+  padding: 8px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.catalogText {
+  font-size: 15px;
+  color: var(--gray);
+  margin: 0;
+}
+
+.buyBtn {
+  border-color: linar-gradient(90deg, #0f0f0f, #653d15);
+    background-color: var(--btn);
+    border-radius: 12px;
+    width: 170px;
+    height: 30px;
+}
+
+
+.headline-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.headline-2 .line {
+  flex: 1;
+  height: 1px;
+  background: #333;
+  opacity: 0.6;
+}
+
+.headline-2 .text {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+
